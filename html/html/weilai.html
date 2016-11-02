@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/life.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/weilai.css"/>
+	</head>
+	<body>
+		<div id="end_bg">
+	    </div>
+	    <div id="end_do">
+	    	  <!--<img src="../../php/cood/img/智慧生活创想馆/1.jpg"/>-->
+	    </div>
+		<div class="end_index">
+			<div class="end_main">
+				<div class="end_logo">
+					<a href="endindex.html">
+						<img src="../../php/cood/img/智慧生活创想馆/logo.png"/>
+					</a>
+				</div>
+				<div class="end_manu">
+					<ul class="end_ul">
+						<li class="end_one" id="hh"><a>关于创想馆</a></li>
+						<li class="end_two" id="hh"><a href="xinwendongtai.html?xinwendongtai_id=1">新闻动态</a></li>
+						<li class="end_tired" id="hh"><a href="weilai.html">未来创想</a></li>
+						<li class="end_forth" id="hh"><a href="life.html?life_id=4">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+  <div class="end_C" style="width: 104%;height: 150px;background-color: #DDD;">
+  		  <div class="end_Z" style="width: 980px;height: 150px;margin: auto;margin-left: auto;margin-right: auto;">
+  			<div class="end_img" style="text-align: center;margin-left: auto;margin-right: auto;">
+  				<img src="../../php/cood/img/1.gif"/>
+  			</div>
+  			<div class="end_size" style="font-size: 50px;color: #1E90FF;margin-top:-100px;">未来创想</div>
+  		 </div>
+  		</div>
+  <div class="pages_main" style="width:980px;maegin-top:30px;margin-right:auto;margin-bottom: 100px;margin-left: auto;background-color: #FFF;padding:10px;">
+    <div class="exhibition">
+	     <div class="exhibition_left">
+      	  <div class="exhibition_left_top"></div>
+          <div class="exhibition_left_bottom"></div>
+       </div>
+      <div class="exhibition_right">
+      	<div class="exhibition_right_title"><a href="life.html?life_id=5" class="title_a"></a></div>
+  		<div class="exhibition_right_pic"><img class="right_img" src=""></div>
+        <div class="exhibition_right_info"></div>
+      </div>
+   </div>
+
+   <div class="exhibition_a">
+      <div class="exhibition_left_a">
+         <div class="exhibition_left_top_a"></div>
+         <div class="exhibition_left_bottom_a"></div>
+      </div>
+     <div class="exhibition_right_a">
+       <div class="exhibition_right_title_a"><a href="life.html?life_id=5" class="bb_a" ></a></div>
+     <div class="exhibition_right_pic_a"><img class="left_img" src=""></div>
+       <div class="exhibition_right_info_a"></div>
+     </div>
+  </div>
+
+</div>
+<!-- 底导航 -->
+    		<div class="end_footer" style="width:104%;height: 200px;background: #333;">
+    			<div class="footer_txt" style="font-size: 12px;line-height: 20px;width: 1000px;margin-right: auto;margin-left: auto;color: #999;text-align: center;padding-top: 20px;">
+    				Copyright © 1996 - 2015 3nod.com All Rights Reserved
+    				<br/>
+    				版权所有 © 2015 三诺集团 | 粤ICP备09173924号
+    				<br />
+    				深圳市南山区滨海大道3012号三诺智慧大厦
+    				<br />
+    			</div>
+    		</div>
+
+
+    	    <div class="end_gun">
+    		  <ul class="end_title">
+    			<li class="end_first k"><a href="life.html?life_id=1" style="width: 70px;" class="ff">关于创想馆</a></li>
+    			<li  class="end_second k"><a href="life.html?life_id=2" style="width: 100px;" class="ff">优越的地理位置</a></li>
+    			<li  class="end_third k"><a href="life.html?life_id=3" style="width: 80px;" class="ff">开始神秘之旅</a></li>
+    		</ul>
+       </div>
+	   </div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../js/endindex.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+  function requestHeader(obj,callBack){
+      var request = new XMLHttpRequest();
+      request.open("GET",obj.url);
+      request.send();
+      request.onreadystatechange = function(){
+        if(request.readyState == 4 && request.status == 200){
+          var str = request.responseText;
+          var obj = JSON.parse(str);
+          if(callBack){
+            callBack(obj);
+  //	         console.log(obj);
+          }
+        }
+      }
+  }
+
+    requestHeader({
+      url:"../../php/cood/weilai.php",
+    },function(obj){
+      for (var i = 0; i < obj.length; i++) {
+        var exhibition_left_top = $(".exhibition_left_top");
+        var exhibition_left_bottom = $(".exhibition_left_bottom");
+        var title_a = $(".title_a");
+        var right_img = $(".right_img");
+        title_a.text(obj[i].weilai_title);
+        exhibition_left_top.text(obj[i].weilai_time2);
+        exhibition_left_bottom.text(obj[i].weilai_time)
+        right_img.attr('src',"../../php/cood/img/"+obj[i].weilai_img);
+      }
+    });
+    requestHeader({
+      url:"../../php/cood/weilai2.php",
+    },function(obj){
+      for (var i = 0; i < obj.length; i++) {
+        var exhibition_left_top_a = $(".exhibition_left_top_a");
+        var exhibition_left_bottom_a = $(".exhibition_left_bottom_a");
+        var exhibition_right_title_a = $(".exhibition_right_title_a");
+        var bb_a = $(".bb_a");
+        var left_img = $(".left_img");
+        bb_a.text(obj[i].weilai2_title2);
+        exhibition_left_top_a.text(obj[i].weilai2_time1);
+        exhibition_left_bottom_a.text(obj[i].weilai2_time2)
+        left_img.attr('src',"../../php/cood/img/"+obj[i].weilai2_img2);
+      }
+    });
+
+
+
+	</script>
+</html>

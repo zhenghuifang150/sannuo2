@@ -1,0 +1,89 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: gray;
+			display: block;
+		} 
+		li{
+			list-style: none;
+		}
+			.end_index{
+			   width: 102.1%;
+			    height: 120px;
+			    /*background: red;*/
+			    background-color:#FFF;
+			   position: relative;
+			    /*top: 60px;*/
+			    opacity: .90;
+			}
+			.end_main{
+				width: 1000px;
+                height: 120px;
+                margin-right: auto;
+                margin-left: auto;
+			}
+		    .end_logo{
+			    	    height: 100px;
+				    width: 200px;
+				    float: left;
+				    margin-left: 20px;
+				    margin-top: 10px;
+		        }
+		    .end_manu{
+		    	       width: 500px;
+				    height: 120px;
+				    float: left;
+				    margin-left: 190px;
+		         }
+		    .end_ul{
+			    	list-style: none;
+			    	height: 120px;
+			    	display: block;
+			    	background-color: #FFF;
+			    	font-size: 14px;
+			    	color: gainsboro;
+			    }
+			    #hh{
+			    	float: left;
+			    	margin: 35px;
+			    	margin-left: auto;
+			    	margin-top: 50px;
+			    	color: gray;
+		    }
+		     .end_gun{
+		   	width: 200px;
+		   	height:100px;
+		   	background:white;
+		   	opacity: .90;   
+		   	position: absolute;
+		   	top: 13%;
+		   	left: 55%;
+		   	z-index: 10;
+		   	font-size: 13px;
+		   	display: none;
+		   }
+		   .end_title{
+		   	 width: 160px;
+		   	 height: 80px;
+		   	 border-left: 1px solid gainsboro;
+		   	 margin-left: 20px;
+		   	 margin-top: 10px;
+		   	 color: gainsboro;
+		   }
+		   .ff{
+		   	margin: 5px;
+		   	height: 25px;
+		   	line-height: 25px;
+		   }
+		   .ff:hover{
+		   	color: white;
+		   	background: turquoise;
+		   }
+		  .end_one{
+		  	width: 90px;
+		  	height: 80px;
+		  }
+		  

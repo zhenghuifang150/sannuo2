@@ -1,0 +1,70 @@
+.middle_A{
+	width: 970px;
+	height: 46px;
+
+	font-weight: bold;
+	text-indent: 20px;
+	border-bottom: 1px solid gainsboro;
+	line-height: 46px;
+	margin: auto;
+}
+.middle_n{
+	font-size: 14px;
+	color: #666666;
+}
+.middle_n:hover{
+	color: black;
+}
+
+.middle_p{
+	font-size: 12px;
+	color: #a0a0a0;
+	margin-left: 20px;
+}
+.middle_s{
+	float: right;
+	font-size: 10px;
+	color: #a0a0a0;
+}
+.middle_ye{
+	padding: 30px;
+	margin-left: 600px;
+}
+.first_a{
+	height: 24px;
+	display: inline-block;
+    color: #898989;
+    border: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0 8px;
+    margin: 0 1px;
+     line-height: 24px;
+}
+.first_b{
+	height: 24px;
+	display: inline-block;
+    color: #898989;
+    border: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0 8px;
+    margin: 0 1px;
+    line-height: 24px;
+}
+.first_c{
+	 line-height: 24px;
+	height: 24px;
+	display: inline-block;
+    color: #898989;
+    border: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0 8px;
+    margin: 0 1px;
+}
+.gg:hover{
+	background: gray;
+	color: white;
+	text-decoration: underline;
+}

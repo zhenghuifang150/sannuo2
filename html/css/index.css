@@ -1,0 +1,663 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+			#header{
+				width: 100%;
+				height: 4px;
+
+			}
+			.line_1{
+				width: 20%;
+				height: 4px;
+				background: orange;
+				float: left;
+			}
+			.line_2{
+				width: 60%;
+				height: 4px;
+				background: dodgerblue;
+				float: left;
+			}
+			.line-3{
+				width: 20%;
+				height: 4px;
+				background: orange;
+				float: left;
+			}
+			/*logo图片*/
+			#logo{
+				width: 100%;
+				height: 100px;
+				overflow: hidden;
+				border: 1px solid gainsboro;
+				margin-bottom: 1%;
+				
+			}
+			.logo_a{
+				width: 980px;
+				height: 100px;
+				position: relative;
+				margin: auto;
+				margin-left: auto;
+			}
+			.logo1{
+				float: left;
+				/*margin-left: 25%;*/
+				/*margin-top: 1%;*/
+				position: absolute;
+				left:12px;
+				top: 14px;
+			}
+			.logo2{
+				
+				float: right;
+				/*margin-right: 25%;*/
+				/*gin-top: 2%;*/
+				position: absolute;
+				left: 629px;
+				top: 30px;
+			}
+			/*菜单*/
+			#menu{
+				width: 100%;
+				height: 50px;
+			}
+			.aa{
+				float: left;
+				list-style: none;
+			}
+			.menu_1{
+				position: absolute;
+				left: 0;
+				top: 25px;
+			}
+			.menu_2{
+				position: absolute;
+				left:100px;
+				top: 25px;
+			}
+			.menu_3{
+				position: absolute;
+				left:250px;
+				top: 25px;
+			}
+			.menu_2{
+				width: 90px;
+				height: 90px;
+			}
+			.menu_4{
+				position: absolute;
+				left:400px;
+				top: 25px;
+			}
+			.menu_5{
+				position: absolute;
+				left:560px;
+				top: 25px;
+			}
+			.menu_6{
+				position: absolute;
+				left:690px;
+				top: 25px;
+			}
+			#menu ul li:hover{
+				/*left:10px;*/
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			.menu_0{
+				width: 980px;
+				height: 100%;
+				margin: auto;
+				margin-left: auto;
+				/*margin-top: -12px;*/
+				top:-14px;
+				position: relative;
+			}
+			#lunbo{
+				width:100%;
+				/*width: 500px;*/
+				height:500px;
+				/*background: red;*/
+				position: absolute;
+			}
+			.wrap{
+				width: 100%;
+				height: 500px;
+				overflow: hidden;
+				position: relative;
+				/*margin-left: 100px;*/
+			}
+			.second{
+				display: inline-block;
+				width: 700%;
+				height: 500px;
+				margin:0;
+				position: absolute;
+				overflow: hidden;
+			}
+			.first{
+				float: left;
+				width: 14.2857%;
+				height: 500px;
+			}
+
+		      .Img {
+		        width: 100%;
+		        height: 500px;
+		      }
+					#menu_big{
+						width: 100%;
+						height: 500px;
+						position: relative;
+					}
+					.max_2{
+						width: 980px;
+						height: 5px;
+						background: yellow;
+						margin: auto;
+						margin-left: auto;
+						position: absolute;;
+						top:-40px;
+						/*left: 8.5%;*/
+					}
+					.min_1{
+						width: 490px;
+						height: 5px;
+						background: orange;
+						float: left;
+
+					}
+					.min_2{
+						width: 245px;
+						height: 5px;
+						background: dodgerblue;
+						float: left;
+
+					}
+					.min_3{
+						width: 245px;
+						height: 5px;
+						background: green;
+						float: left;
+					}
+
+				.bigzt{
+					/*width: 980px;
+					height: 38px;
+					background: rgb(241,242,245);*/
+					/*position: absolute;*/
+					/*top: 466px;*/
+					/*left:8.5%;*/
+				}
+
+/*字体轮播*/
+					.wrapper{
+					width: 980px;
+					height: 35px;
+					position: absolute;;
+					margin: auto;
+					margin-left: auto;
+					top: -35px;
+					background: rgb(241,242,245);
+					overflow: hidden;
+					z-index:0;
+					}
+					.ztlbo{
+					width: 300px;
+					height: 175px;
+					position: absolute;
+					margin: auto;
+					top: 0;
+					margin-left: auto;
+					/*margin-left: -10%;*/
+					/*left: 1%;*/
+					}
+					.ztlb{
+					width: 300px;
+					height: 35px;
+					margin-left: 5px;
+					font-size: 12px;
+					line-height: 35px;
+					color: brown;
+					list-style: none;
+					}
+					.My{
+					width: 5px;
+					height: 12px;
+					/*overflow: hidden;*/
+					float: left;
+					margin-top: 10px;
+					margin-right: 8px;
+					}
+					/*集团新闻*/
+					#max_3{
+						width: 980px;
+						height: 250px;
+						/*background: red;*/
+						position: relative;
+						margin: auto;
+						margin-left: auto;
+						/*left: 20%;*/
+						border: 1px solid gainsboro;
+					}
+					.max_left{
+						width:470px;
+						height: 250px;
+						/*background: yellow;*/
+						border-right: 1px solid gainsboro;
+						float: left;
+					}
+					.max_right{
+						width:508px;
+						height: 250px;
+						/*background: green;*/
+						border-right: 1px solid gainsboro;
+						float: left;
+					}
+					/******************菜单里的移入移出**********************************************/
+					.about_one{
+						width: 172px;
+						height: 240px;
+						background: gainsboro;
+						position: absolute;
+						z-index: 100;
+						left: 146px;
+						top: 48px;
+						display: none;
+					}
+					.about_first{
+						width: 150px;
+						height:220px;
+						/*background: red;*/
+						margin: auto;
+						border-left: 1px solid gray;
+					}
+					#cc{
+						list-style: none;
+					  margin-left: 30px;
+						margin-top: 15px;
+						/*border: 1px solid gray;*/
+						border-radius: 3px;
+						width: 60px;
+					}
+
+						#cc a {
+							font-size: 12px;
+						}
+						.about_two{
+							width: 200px;
+							height: 120px;
+							position: absolute;
+							left: 257px;
+							top: 48px;
+							background:gainsboro;
+							z-index: 10;
+							display: none;
+						}
+						.about_second{
+							width: 150px;
+							height: 90px;
+							/*background: yellow;*/
+							margin: auto;
+							border-left:1px solid gray;
+						}
+						.menu_3{
+							width:100px;
+							height: 60px;
+
+						}
+						.menu_4{
+							width: 90px;
+							height: 33px;
+						}
+						.about_tired{
+							width: 170px;
+							height: 350px;
+							background: gainsboro;
+							z-index: 120;
+							position: absolute;
+							top: 48px;
+							left:428px;
+							display: none;
+						}
+						.AA{
+							width: 140px;
+							height: 330px;
+							margin: auto;
+							/*background: yellow;*/
+							margin-top: 15px;
+						}
+						.about_third{
+							width: 140px;
+							height: 70px;
+							/*background: red;*/
+							border-left: 1px solid gray;
+						}
+						/*.about_tired{
+							width: 140px;
+							height: 15px;
+							
+						}*/
+						.word_1{
+							position: absolute;
+							top: 20px;
+												
+						}
+						.about_third_1{
+							width: 140px;
+							height: 120px;
+							/*background:yellow;*/
+							border-left: 1px solid gray;
+							margin-top: 5px;
+						}
+						.word_2{
+							font-size: 14px;
+							margin-left: 28px;
+						}
+						.about_third_2{
+							width: 140px;
+							height: 120px;
+							/*background: green;*/
+							margin-top: 5px;
+							border-left: 1px solid gray;
+						}
+						.word_6{
+							margin-left: 28px;
+							font-size: 14px;
+						}
+						.menu_5{
+							width: 74px;
+							height: 33px;
+						}
+						.about_forth{
+							width: 180px;
+							height: 100px;
+							background: gainsboro;
+							z-index: 10;
+							position: absolute;
+							top: 48px;
+							left: 573px;	
+							display: none;						
+						}
+						.about_fifth{
+							width: 150px;
+							height: 70px;
+							/*background: red;*/
+							margin: auto;
+							border-left: 1px solid gray;
+						}
+						#cc{
+							width: 60px;
+							height: 15px;
+							line-height: 15px;
+							text-align: center;
+						}
+						#cc:hover{
+							border: 1px solid black;
+							border-radius: 3px;													
+						}
+						/****************集体新闻和最新资讯******************************/
+						.Con{
+							width: 440px;
+							height: 220px;
+							/*background: red;*/
+							margin: auto;
+							margin-top: 15px;
+							position: relative;
+						}
+						.Con_left{
+							width: 60px;
+							height: 25px;
+							float: left;
+							border: 1px solid grey;
+							border-radius: 3px;
+							background: rgb(182,217,228);		
+							
+							font-size: 13px;
+							line-height: 25px;
+							color: gray;
+							text-align: center;
+						}
+						.Con_right{
+							width: 60px;
+							height: 25px;
+							float: left;
+							border: 1px solid grey;
+							border-radius: 3px;
+							background: white;
+							font-size: 13px;
+							line-height: 25px;
+							color: gray;
+							text-align: center;
+						}
+						.Con_1{
+							width: 440px;
+							border-bottom: 1px solid aquamarine;
+							height: 25px;							
+						}
+						.Con_big{
+							width: 440px;
+							height: 194px;
+							/*background: green;*/
+							position: absolute;
+							top: 42px;
+							left: 15px;
+							display: block;
+							
+						}
+						.Con_big_top{
+							width: 440px;
+							height: 97px;
+							/*background: orange;*/
+							border-bottom:1px solid gray;		
+							
+						}
+						.Con_img{
+							width: 60px;
+							height: 60px;
+							margin-top: 10px;
+							float: left;
+						}
+						.Con_title{
+							width: 365px;
+							height: 60px;
+							margin-top: 10px;
+							margin-left: 70px;
+						}
+						.Con_title_a{
+							width: 365px;
+							height: 12px;
+							/*float: left;*/
+							color: orangered;
+							font-size: 12px;
+							
+						}
+						.Con_title_a:hover{
+							text-decoration: underline;
+						}
+						.Con_content{
+							/*float: left;*/
+							width: 365px;
+							height: 54px;
+							font-size: 12px;
+							color: grey;
+							margin-top: 5px;
+							
+						}
+						.Con_big_top_1{
+							width: 440px;
+							height: 80px;
+							/*background: pink;*/
+							position: absolute;
+							top: 8.5px;	
+										
+						}
+						.Con_big_bottom{
+							width:440px;
+							height: 89px;
+							margin-left: 10px;
+							margin-top: 10px;
+							border-bottom: 1px solid gray;						
+						}
+						.now_content{
+							width: 420px;
+							height: 78px;
+													
+						}
+						.now_a_1{
+							margin-top: 5px;
+							font-size: 12px;
+							color: gray;
+							float: left;
+							line-height: 15px;
+						}
+						.now_a_1:hover{
+							text-decoration: underline;
+						}
+						.now_time{
+							width: 30.7px;
+							height: 12px;
+							margin-top: 5px;
+							font-size: 12px;
+							color: gray;
+							float: right;
+							line-height: 15px;	
+									
+						}
+						.Con_game{
+							width: 440px;
+							height: 194px;
+							/*background: green;*/
+							position: absolute;
+							top: 42px;
+							left: 15px;
+							font-size: 12px;
+							color: gray;
+							display: none;
+						}
+						.Con_game_title{
+							width: 430px;
+							height: 15px;
+							line-height: 22px;
+						}
+						
+						.Con_game_content{
+							width: 430px;
+							height: 180px;
+							margin-top: 14px;
+							margin-left: 10px;			
+						}
+						.Con_game_a{
+							float: left;
+						}
+						.Con_game_a:hover{
+							text-decoration: underline;
+						}
+						.Con_game_time{
+							float: right;
+						}
+						.max_top{
+							width:488px;
+						    height: 230px;
+							/*background: red;*/
+							margin: auto;
+							/*margin-top: 10px;*/
+						}
+						.max_inside{
+							width:488px;
+						    height: 230px;
+						    margin-top: 10px;
+						}
+						.max_footer{
+							width: 980px;
+						    height: 100px;
+						     /*background: red;*/ 
+						    position: relative;
+						    left: -1%;
+						    top: 20px;
+						    margin: auto;
+						    margin-left: auto;
+						    /*top: 10%;*/
+						    /*border: 1px solid gainsboro;*/
+						}
+						/*/******************下边导航********************************************/
+						.footer_left{
+							position: absolute;
+							top: 35px;
+							width: 200px;
+							height: 25px;
+							border: 1px solid gainsboro;
+							border-radius: 3px;
+						}
+						.footer_text{
+							float: left;
+							font-size: 15px;
+							text-align: center;
+							line-height: 25px;
+							margin-left: 59px;
+						}
+						.left_img{
+							position: absolute;
+							top: -5px;
+							left: 180px;
+							float: right;
+						}
+						.footer_ul{
+							width: 190px;
+							height: 236px;
+							position: absolute;
+							left: -229px;
+							top: -210px;
+							border: 2px solid gray;
+							border-radius: 4px;
+							display: none;
+						}
+						.footer_b{
+							width: 190px;
+							height: 25px;
+							line-height: 25px;
+							font-size: 14px;
+							color: gray;
+							margin-top: 1.5px;
+						}
+						.footer_b:hover{
+							background: gainsboro;
+						}
+						.footer_aa{
+							margin-left: 10px;
+						}
+						.footer_right{
+							float: right;
+							color: gray;
+							font-size: 12px;
+							margin-top: 41px;
+						}
+						.fixed_a{
+							position: relative;
+						}
+					  .fixed{
+					  	position: fixed;
+					  	right: 10px;	  
+					  	width: 36px;
+					  	top: 539px;
+					  	height: 48px;
+					  	background: url(../../php/cood/img/CE37D0EA-4115-4E10-B461-16285EDC465B.png);
+					  	cursor: pointer;	
+					  }
+					  .fixed_2{
+					  	position:fixed;
+					  	right: 45px;
+					  	top: 300px;
+					  	cursor: pointer;	
+					  	display: none;
+					  	width: 270px;
+					  	height: 355px;
+					  	background: url(../../php/cood/img/dd.png) no-repeat -4px -3px;
+					  }

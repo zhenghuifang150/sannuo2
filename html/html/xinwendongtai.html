@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/life.css"/>
+	</head>
+	<body>
+		<div id="end_bg">
+	    </div>
+	    <div id="end_do">
+	    	  <!--<img src="../../php/cood/img/智慧生活创想馆/1.jpg"/>-->
+	    </div>
+		<div class="end_index">
+			<div class="end_main">
+				<div class="end_logo">
+					<a href="endindex.html">
+						<img src="../../php/cood/img/智慧生活创想馆/logo.png"/>
+					</a>
+				</div>
+				<div class="end_manu">
+					<ul class="end_ul">
+						<li class="end_one" id="hh"><a>关于创想馆</a></li>
+						<li class="end_two" id="hh"><a href="xinwendongtai.html?xinwendongtai_id=1">新闻动态</a></li>
+						<li class="end_tired" id="hh"><a href="weilai.html">未来创想</a></li>
+						<li class="end_forth" id="hh"><a href="life.html?life_id=4">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+  <div id="contentImg"></div>
+
+    		<div class="end_footer" style="width:104%;height: 200px;background: #333;">
+    			<div class="footer_txt" style="font-size: 12px;line-height: 20px;width: 1000px;margin-right: auto;margin-left: auto;color: #999;text-align: center;padding-top: 20px;">
+    				Copyright © 1996 - 2015 3nod.com All Rights Reserved
+    				<br/>
+    				版权所有 © 2015 三诺集团 | 粤ICP备09173924号
+    				<br />
+    				深圳市南山区滨海大道3012号三诺智慧大厦
+    				<br />
+    			</div>
+    		</div>
+
+
+    	    <div class="end_gun">
+    		  <ul class="end_title">
+    			<li class="end_first k"><a href="life.html?life_id=1" style="width: 70px;" class="ff">关于创想馆</a></li>
+    			<li  class="end_second k"><a href="life.html?life_id=2" style="width: 100px;" class="ff">优越的地理位置</a></li>
+    			<li  class="end_third k"><a href="life.html?life_id=3" style="width: 80px;" class="ff">开始神秘之旅</a></li>
+    		</ul>
+       </div>
+	   </div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../js/endindex.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+  function getvl(name) {
+    var reg = new RegExp("(^|\\?|&)"+name+"=([^&]*)(\\s|&|$)", "i");
+    if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " "));
+    return "";
+ }
+  console.log(getvl("xinwendongtai_id"))
+$.get("../../php/cood/xinwendongtai.php?xinwendongtai_id="+getvl("xinwendongtai_id"),function(data){
+  var obj = JSON.parse(data);
+  console.log(obj);
+  var contentImg = $("#contentImg");
+  contentImg[0].innerHTML = obj.xinwendongtai_content;
+})
+	</script>
+</html>
